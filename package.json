@@ -1,12 +1,12 @@
 {
-  "name": "shivangi-teams-clone",
+  "name": "mahima-teams-clone",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Shivangi Chauhan",
+  "author": "mahima Chauhan",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
