@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const server = require('http').Server(app);
+const server = require('http').Server(app);//// you explicitly create the http server.
 const { auth } = require('express-openid-connect');
-const { v4: uuidv4 } = require('uuid');
-require('dotenv').config();
+const { v4: uuidv4 } = require('uuid');//integrate uuidv4 into your project by using the require function.
+require('dotenv').config();//Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
 
-app.use(express.urlencoded({ extended: true }));
-app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));//method inbuilt in express to recognize the incoming Request Object as strings or arrays.
+app.set('view engine', 'ejs');//it looks into the 'views' folder for the templates to render. 
 const io = require('socket.io')(server, {
   cors: {
     origin: '*',
@@ -19,7 +19,8 @@ const peerServer = ExpressPeerServer(server, {
 
 app.use('/peerjs', peerServer);
 app.use(express.static('public'));
-
+//Express JS middleware implementing sign on for Express web apps using OpenID Connect.
+//With this basic configuration, application will require authentication for all routes and store the user identity in an encrypted and signed cookie.
 const config = {
   authRequired: false,
   auth0Logout: true,
