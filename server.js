@@ -33,7 +33,7 @@ const config = {
 app.use(auth(config));
 
 app.use('/', require('./routes/index'));
-
+//whenever client connected to server then each client is provided with socket id.
 io.on('connection', (socket) => {
   socket.on('join-room', (roomId, userId, userName) => {
     socket.join(roomId);
@@ -44,7 +44,7 @@ io.on('connection', (socket) => {
     });
   });
 });
-
+// The process.env.PORT is going to check your environment variables to see if you already have a PORT defined there if not it will use PORT 3000.
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`App is up and running at PORT : ${port}`);
