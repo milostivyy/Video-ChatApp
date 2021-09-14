@@ -1,9 +1,8 @@
-# Abhi-Vaadan
+# Abhi-Vaadan🎉
 
 This is a videochat app which enables multiple users to communicate with each other .This is a project that I have built as an individual project.It provides users to connect via video call and other functionalities like live chat.
-![image](https://user-images.githubusercontent.com/78307937/133205544-d40d9286-9c4c-4de9-bb2b-274773c03c80.png)
 
-check out live demo-https://video-chat--1.herokuapp.com/
+Check out live demo-https://video-chat--1.herokuapp.com/
 
 # How to run the project?
 
