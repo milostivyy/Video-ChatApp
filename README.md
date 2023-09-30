@@ -1,4 +1,4 @@
-# Abhi-Vaadan🎉
+# Talk-Wave🎉
 
 This is a videochat app which enables multiple users to communicate with each other .This is a project that I have built as an individual project.It provides users to connect via video call and other functionalities like live chat.
 
